@@ -7,7 +7,19 @@ Showroom digital da Lamacon Materiais de Construção, em Timóteo, Minas Gerais
 - React 18 com TypeScript estrito
 - Vite 6 para desenvolvimento e build
 - Lucide React para iconografia
-- CSS responsivo com tokens de marca
+- CSS responsivo com tokens de marca (`src/styles.css`, organizado por seção)
+
+## Seções do site
+
+1. **Início** — chamada principal, ações e ilustração arquitetônica
+2. **Faixa de confiança** — públicos atendidos e localização da loja
+3. **Atendimento** — casa & reforma, construtores e profissionais
+4. **Etapas da obra** — fundação, hidráulica, elétrica e acabamento
+5. **Catálogo** — espaço reservado do showroom digital
+6. **Orçamento** — lista de materiais salva no navegador e mensagem pronta para o WhatsApp
+7. **Dúvidas frequentes**
+8. **A loja** — endereço, mapa incorporado e rota no Google Maps
+9. **Chamada final e rodapé**
 
 ## Executar localmente
 
