@@ -27,7 +27,13 @@ const WHATSAPP_NUMBER = ''
 const ADDRESS = 'Av. Pinheiro, 522 - Limoeiro, Timóteo - MG, 35181-402'
 const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`Lamacon Materiais de Construção, ${ADDRESS}`)}`
 
-const newItem = (): QuoteItem => ({ id: crypto.randomUUID(), name: '', quantity: '' })
+const newItem = (): QuoteItem => ({
+  id: typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function'
+    ? crypto.randomUUID()
+    : `quote-${Date.now()}-${Math.random().toString(36).slice(2)}`,
+  name: '',
+  quantity: '',
+})
 
 function Brand({ footer = false }: { footer?: boolean }) {
   return (
